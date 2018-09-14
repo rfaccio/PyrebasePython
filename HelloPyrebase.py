@@ -28,7 +28,7 @@ storage = firebase.storage()
 
 # upload e download de imagem
 result_up = storage.child("images/example.jpg").put("jorge.jpg")
-result_down = storage.child("images/example.jpg").download("jorge_down.jpg")
+storage.child("images/example.jpg").download("jorge_down.jpg")
 
 # adicionando dados ao db
 data = {
